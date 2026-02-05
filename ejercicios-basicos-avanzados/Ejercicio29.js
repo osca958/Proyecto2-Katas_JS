@@ -21,9 +21,9 @@ const peliculasPorDecada = {}; // creo un objeto vacio donde ir añadiendo las p
 for (const movie of starWarsMovies) {
   const decada = Math.floor(movie.releaseYear / 10) * 10; //saco la decada diviendo entre 10, redondeando hacia abajo y luego multiplicando por 10
   if (!peliculasPorDecada[decada]) {
-    peliculasPorDecada[decada] = [];
+    peliculasPorDecada[decada] = []; //Si la decada no existe la creo vacia
   }
-  peliculasPorDecada[decada].push(movie);
+  peliculasPorDecada[decada].push(movie); // sino, le añado la pelicula nueva
 }
 
 console.log(peliculasPorDecada);

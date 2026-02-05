@@ -25,7 +25,7 @@ const movies = [
 for (const movie of movies) {
   if (movie.durationInMinutes < 100) {
     peliculasPequeñas.push(movie);
-  } else if (movie.durationInMinutes > 100 && movie.durationInMinutes < 200) {
+  } else if (movie.durationInMinutes >= 100 && movie.durationInMinutes < 200) {
     peliculasMedianas.push(movie);
   } else {
     peliculasGrandes.push(movie);

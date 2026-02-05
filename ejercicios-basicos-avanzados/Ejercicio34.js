@@ -22,12 +22,14 @@ const movies = [
 console.log(averageMovieDuration(movies));
 
 function averageMovieDuration(movies) {
-    let total = 0;
+    let total = 0; // creo una variable inicializada a cero donde guardo el total de las duraciones
 
     for (const movie of movies) {
-        total += movie.duration;
+        total += movie.duration; // voy sumando las duraciones en la variable total
     }
     return total / movies.length;
 
     // ¿Qué deberías devolver al final?
 }
+
+console.log(averageMovieDuration(movies));

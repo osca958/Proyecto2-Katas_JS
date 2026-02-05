@@ -17,13 +17,13 @@ const tracks = [
   { title: "Stairway to Heaven", genre: "Rock" },
 ];
 
-const cancionesPorGenero = {};
-for (const track of tracks) {
+const cancionesPorGenero = {}; // creo un objeto vacio
+for (const track of tracks) { // recorro las canciones sin ordenar
   const genero = track.genre;
-  if (!cancionesPorGenero[genero]) {
-    cancionesPorGenero[genero] = [];
+  if (!cancionesPorGenero[genero]) { // si el genero no existe
+    cancionesPorGenero[genero] = []; // creo un array vacio dentro del objeto
   }
-  cancionesPorGenero[genero].push(track);
+  cancionesPorGenero[genero].push(track); // añado la cancion a ese mismo genero
 }
 
 console.log("Cancione ordenadas por género:", cancionesPorGenero);
